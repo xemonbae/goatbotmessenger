@@ -19,7 +19,7 @@
 
 const { spawn } = require("child_process");
 const log = require("./logger/log.js");
-
+const keep_alive = require('./keep_alive.js')
 function startProject() {
 	const child = spawn("node", ["Goat.js"], {
 		cwd: __dirname,
